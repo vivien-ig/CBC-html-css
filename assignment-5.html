@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .tr td{
+        padding:5px;
+        }
+    .table, .th, .td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .th{
+        background-color: rgb(219, 121, 206);
+    }
+    .td {
+        background-color: rgb(166, 212, 197);
+    }
+    .col{
+        background-color: blanchedalmond;
+    }
+
+    .table, .th, .td {
+        padding:5px;
+    }
+    .nestedtbl, th, td{
+ border: 1px solid black;
+  border-collapse: collapse;
+  margin:10px;
+    }
+
+    .nestedtbl th{
+        background-color: rgb(42, 165, 114);
+    }
+    .nestedtbl td{
+        background-color: azure;
+    }
+    </style>
+</head>
+<body>
+    <h1>Layout 1</h1>
+    <h3>Basic HTML table</h1>
+    <table>
+  <tr>
+    <th>Name</th>
+    <th>Job Title</th>
+    <th>Email Address</th>
+  </tr>
+  <tr class="tr">
+    <td>John Doe </td>
+    <td>Managing Director</td>
+    <td>john.doe@gmail.com</td>
+  </tr>
+  <tr class="tr">
+    <td>Jane Doe</td>
+    <td>System Engineer</td>
+    <td>jane.doe@yahoo.com</td>
+  </tr>
+  <tr class="tr">
+    <td>Jim Doe</td>
+    <td>Media Manager</td>
+    <td>jim.doe@hotmail.com</td>
+  </tr>
+</table>
+    <h1>Layout 2</h1>
+    <h3>Table with cells that span many columns</h1>
+    <table class="table">
+  <tr>
+    <th class="th">Name</th>
+    <th class="th">Job Title</th>
+    <th class="th">Email Address</th>
+    <th class="th" colspan="2">Telephone</th>
+  </tr>
+  <tr>  
+    <td  class="td">John Doe </td>
+    <td  class="td">Managing Director</td>
+    <td  class="td">john.doe@gmail.com</td>
+    <td class="td col">123-222-556</td>
+    <td class="td col">453-121-466</td>
+  </tr>
+  <tr>
+    <td class="td">Jane Doe</td>
+    <td class="td">System Engineer</td>
+    <td class="td">jane.doe@yahoo.com</td>
+     <td class="td col">123-222-556</td>
+    <td class="td col">453-121-466</td>
+  </tr>
+  <tr>
+    <td class="td">Jim Doe</td>
+    <td class="td">Media Manager</td>
+    <td class="td">jim.doe@hotmail.com</td>
+     <td class="td col">123-222-556</td>
+    <td class="td col">453-121-466</td>
+  </tr>
+</table>
+
+</table>
+    <h1>Layout 3</h1>
+    <h3>Table nested within a table </h1>
+    <table class="table">
+  <tr>
+    <th class="th">Name</th>
+    <th class="th">Job Title</th>
+    <th class="th">Email Address</th>
+    <th class="th">Telephone</th>
+  </tr>
+  <tr>  
+    <td  class="td">John Doe </td>
+    <td  class="td">Managing Director</td>
+    <td  class="td">john.doe@gmail.com</td>
+    <td class="td col">
+        <table class="nestedtbl">
+            <tr>
+                <th>Home Phone</th>
+                <th>Cell Phone</th>
+            </tr>
+            <tr>
+                <td>233-221-545</td>
+                <td>111-221-344</td>
+            </tr>
+        </table>
+    </td>
+  </tr>
+  </table>
+</body>
+</html>
